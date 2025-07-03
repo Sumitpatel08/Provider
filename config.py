@@ -11,11 +11,11 @@ class Config:
     #                    TELEGRAM API CONFIGURATION
     # ═══════════════════════════════════════════════════════════════
     
-    API_ID: int = 245186
-    API_HASH: str = ""
-    BOT_TOKEN: str = ":"
-    BOT_USERNAME: str = "vidxtractorbot"
-    BOT_NAME: str = "VɪᴅXᴛʀᴀᴄᴛᴏʀ"
+    API_ID: int = 21816206
+    API_HASH: str = "0a82243f31819a62df76947196fdaa0a"
+    BOT_TOKEN: str = "7721650261:AAEiX0rE4sC7vN0fWn3s48sgWfuj5O0dGc4"
+    BOT_USERNAME: str = "post_forwarding_robot"
+    BOT_NAME: str = "post forward"
     
     # User session for faster uploads (optional)
     USER_SESSION: Optional[str] = os.environ.get(
@@ -28,22 +28,22 @@ class Config:
     # ═══════════════════════════════════════════════════════════════
     
     DB_URL: str = "mongodb+sr2:@cluster0.z6bb3.mongodb.net/cornhub?retryWrites=true&w=majority"
-    DB_NAME: str = "cornhub"
-    DATABASE_NAME: str = "cornhub"  # Alias for compatibility
+    DB_NAME: str = "forward"
+    DATABASE_NAME: str = "forward"  # Alias for compatibility
     
     # ═══════════════════════════════════════════════════════════════
     #                    ADMIN CONFIGURATION
     # ═══════════════════════════════════════════════════════════════
     
-    OWNER_ID: int = int(os.environ.get("OWNER_ID", "7560922302"))
-    OWNER_TAG: str = os.environ.get("OWNER_TAG", "shizukawachan")
+    OWNER_ID: int = int(os.environ.get("OWNER_ID", "7645440087"))
+    OWNER_TAG: str = os.environ.get("OWNER_TAG", "provider_og")
     
     # Parse admin list from environment
     ADMIN_LIST: List[str] = os.environ.get("ADMINS", "").split()
     ADMINS: List[int] = [int(admin) for admin in ADMIN_LIST if admin.isdigit()]
     ADMINS.append(OWNER_ID)  # Always include owner
     
-    ADMIN_USERS: List[int] = [7560922302]  # Primary admin users
+    ADMIN_USERS: List[int] = [7645440087]  # Primary admin users
     
     # ═══════════════════════════════════════════════════════════════
     #                    DOWNLOAD CONFIGURATION
@@ -65,7 +65,7 @@ class Config:
     #                    DUMP CHANNELS
     # ═══════════════════════════════════════════════════════════════
     
-    DUMP_CHAT_IDS: List[int] = [-1002544745474, -1002818664382, -1002720183106, -1002460893841, -1002664225966, -1002770588536, -1002663153052, -1002857709387, -1002877451208, -1002774996981, -1002677745677, -1002765057759, -1002642208423]
+    DUMP_CHAT_IDS: List[int] = [-1002655593159]
     
     # ═══════════════════════════════════════════════════════════════
     #                    AUTHORIZATION
